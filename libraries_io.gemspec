@@ -5,7 +5,7 @@ require "libraries_io/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "libraries_io"
-  spec.version       = LibrariesIo::VERSION
+  spec.version       = LibrariesIO::VERSION
   spec.authors       = ["Marc-Andre Lafortune"]
   spec.email         = ["github@marc-andre.ca"]
 

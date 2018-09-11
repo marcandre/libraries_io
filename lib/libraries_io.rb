@@ -1,5 +1,5 @@
 require "libraries_io/version"
 
-module LibrariesIo
+module LibrariesIO
   # Your code goes here...
 end

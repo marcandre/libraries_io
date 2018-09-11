@@ -1,6 +1,6 @@
-RSpec.describe LibrariesIo do
+RSpec.describe LibrariesIO do
   it "has a version number" do
-    expect(LibrariesIo::VERSION).not_to be nil
+    expect(LibrariesIO::VERSION).not_to be nil
   end
 
   it "does something useful" do
