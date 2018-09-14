@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/rubygems/deep-cover/usage
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 14 Sep 2018 23:00:52 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=d878022297b58bfbcde95a0cd2150e2681536966024; expires=Sat, 14-Sep-19
+        23:00:24 GMT; path=/; domain=.libraries.io; HttpOnly
+      vary:
+      - Accept-Encoding, Origin
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      x-ratelimit-limit:
+      - '30'
+      x-ratelimit-remaining:
+      - '28'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 6d207182-bdfb-4e5e-ae14-210082592bca
+      x-runtime:
+      - '1.190839'
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 45a678353c0bab9c-YYZ
+    body:
+      encoding: ASCII-8BIT
+      string: '{"\u003e= 0":1,"~\u003e 0.6":1,"0.6.2":2}'
+    http_version: 
+  recorded_at: Fri, 14 Sep 2018 23:00:52 GMT
+recorded_with: VCR 3.0.3

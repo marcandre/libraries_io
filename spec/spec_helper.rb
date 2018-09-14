@@ -1,6 +1,13 @@
 require 'bundler/setup'
 require 'rspec/its'
 require 'libraries_io'
+require 'vcr'
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :faraday
+  c.configure_rspec_metadata!
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -10,3 +17,4 @@ RSpec.configure do |config|
     c.syntax = [:should, :expect]
   end
 end
+

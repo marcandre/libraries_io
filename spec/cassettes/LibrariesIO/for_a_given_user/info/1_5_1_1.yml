@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/github/marcandre
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 14 Sep 2018 23:02:28 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=df29876cb18419c97d4cb31103ba1259f1536966146; expires=Sat, 14-Sep-19
+        23:02:26 GMT; path=/; domain=.libraries.io; HttpOnly
+      vary:
+      - Accept-Encoding, Origin
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      x-ratelimit-limit:
+      - '30'
+      x-ratelimit-remaining:
+      - '23'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - fdc97400-4330-4e15-910e-3fb3736ff38f
+      x-runtime:
+      - '0.697921'
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 45a67b325f89ab48-YYZ
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJnaXRodWJfaWQiOiIzMzc3MCIsImxvZ2luIjoibWFyY2FuZHJlIiwidXNlcl90eXBlIjoiVXNlciIsImNyZWF0ZWRfYXQiOiIyMDE1LTAxLTI3VDA3OjA2OjA4LjY5M1oiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wOC0yN1QyMjowNjozMy45MTFaIiwibmFtZSI6Ik1hcmMtQW5kcsOpIExhZm9ydHVuZSIsImNvbXBhbnkiOiJGcmVlbGFuY2UiLCJibG9nIjoiYmxvZy5tYXJjLWFuZHJlLmNhIiwibG9jYXRpb24iOiJNb250cmVhbCwgQ2FuYWRhIiwiaGlkZGVuIjpmYWxzZSwibGFzdF9zeW5jZWRfYXQiOiIyMDE2LTEyLTE5VDE0OjAyOjM2LjI0NFoiLCJlbWFpbCI6ImdpdGh1Yl9yb2Nrc0BtYXJjLWFuZHJlLmNhIiwiYmlvIjpudWxsLCJmb2xsb3dlcnMiOjE3MiwiZm9sbG93aW5nIjoxMCwidXVpZCI6IjMzNzcwIiwiaG9zdF90eXBlIjoiR2l0SHViIn0=
+    http_version: 
+  recorded_at: Fri, 14 Sep 2018 23:02:28 GMT
+recorded_with: VCR 3.0.3

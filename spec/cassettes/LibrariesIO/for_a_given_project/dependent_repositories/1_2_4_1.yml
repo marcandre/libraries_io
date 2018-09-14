@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/rubygems/deep-cover/dependent_repositories
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 14 Sep 2018 23:01:41 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=dcb384901b66f81b5f83dd6571127cdfb1536966088; expires=Sat, 14-Sep-19
+        23:01:28 GMT; path=/; domain=.libraries.io; HttpOnly
+      vary:
+      - Accept-Encoding, Origin
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      per-page:
+      - '30'
+      total:
+      - '2'
+      x-ratelimit-limit:
+      - '30'
+      x-ratelimit-remaining:
+      - '27'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 2dcd96be-72a8-4cbc-98f1-14dce99185b1
+      x-runtime:
+      - '0.337941'
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 45a679c5db98ab54-YYZ
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"full_name":"deep-cover/deep-cover","description":"The best coverage
+        tool for Ruby code","fork":false,"created_at":"2017-09-21T22:33:30.000Z","updated_at":"2018-08-23T18:54:46.249Z","pushed_at":"2018-08-23T18:22:26.000Z","homepage":"","size":1345,"stargazers_count":84,"language":"Ruby","has_issues":true,"has_wiki":true,"has_pages":false,"forks_count":8,"mirror_url":null,"open_issues_count":3,"default_branch":"master","subscribers_count":5,"uuid":"104405256","source_name":null,"license":"MIT","private":false,"contributions_count":8,"has_readme":"README.md","has_changelog":"CHANGELOG.md","has_contributing":"CONTRIBUTING.md","has_license":"LICENSE.txt","has_coc":"CODE_OF_CONDUCT.md","has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2018-08-23T18:54:44.824Z","rank":9,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"104405256","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":8,"keywords":["branch-coverage","coverage","ruby"]},{"full_name":"ScottHaney/file_data","description":"Ruby
+        library that reads Exif tag data from Jpeg files","fork":false,"created_at":"2017-02-11T04:18:07.000Z","updated_at":"2018-07-21T19:49:39.804Z","pushed_at":"2018-07-21T02:19:53.000Z","homepage":null,"size":124,"stargazers_count":1,"language":"Ruby","has_issues":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"open_issues_count":0,"default_branch":"master","subscribers_count":0,"uuid":"81630146","source_name":null,"license":"MIT","private":false,"contributions_count":1,"has_readme":"README.md","has_changelog":null,"has_contributing":null,"has_license":"LICENSE.txt","has_coc":null,"has_threat_model":null,"has_audit":null,"status":null,"last_synced_at":"2018-07-21T19:49:39.721Z","rank":3,"host_type":"GitHub","host_domain":null,"name":null,"scm":"git","fork_policy":null,"github_id":"81630146","pull_requests_enabled":null,"logo_url":null,"github_contributions_count":1,"keywords":["exif","ruby"]}]'
+    http_version: 
+  recorded_at: Fri, 14 Sep 2018 23:01:41 GMT
+recorded_with: VCR 3.0.3

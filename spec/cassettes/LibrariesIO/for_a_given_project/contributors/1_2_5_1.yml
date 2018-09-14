@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/rubygems/deep-cover/contributors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 14 Sep 2018 23:02:06 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=d93d9f1db86cac09d660884a0fd0d66881536966101; expires=Sat, 14-Sep-19
+        23:01:41 GMT; path=/; domain=.libraries.io; HttpOnly
+      vary:
+      - Accept-Encoding, Origin
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      per-page:
+      - '30'
+      total:
+      - '8'
+      x-ratelimit-limit:
+      - '30'
+      x-ratelimit-remaining:
+      - '29'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 29950f3f-c9f5-4f6b-a0c3-82d73e21a5c7
+      x-runtime:
+      - '3.012071'
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 45a67a17cb82ab48-YYZ
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siZ2l0aHViX2lkIjoiMTE2MDY5OSIsImxvZ2luIjoiYnVkbmlrIiwidXNlcl90eXBlIjoiVXNlciIsImNyZWF0ZWRfYXQiOiIyMDE1LTAxLTI3VDA3OjA0OjIxLjY1N1oiLCJ1cGRhdGVkX2F0IjoiMjAxNi0xMi0xOFQxNzowMzoxNi4xNTNaIiwibmFtZSI6IkRtaXRyaXkgQnVkbmlrIiwiY29tcGFueSI6IlZFTlRVUkUuY28iLCJibG9nIjoiaHR0cDovL3R3aXR0ZXIuY29tL2QxYiIsImxvY2F0aW9uIjoiRG5pcHJvcGV0cm92cydrLCBVa3JhaW5lIiwiaGlkZGVuIjpmYWxzZSwibGFzdF9zeW5jZWRfYXQiOiIyMDE2LTEyLTE4VDE3OjAzOjE2LjExNVoiLCJlbWFpbCI6ImRtaXRyaXkuYnVkbmlrQGdtYWlsLmNvbSIsImJpbyI6bnVsbCwiZm9sbG93ZXJzIjoyOCwiZm9sbG93aW5nIjoxMjgsInV1aWQiOiIxMTYwNjk5IiwiaG9zdF90eXBlIjoiR2l0SHViIn0seyJnaXRodWJfaWQiOiI3OTM1MSIsImxvZ2luIjoibW9qYXZlbGludXgiLCJ1c2VyX3R5cGUiOiJVc2VyIiwiY3JlYXRlZF9hdCI6IjIwMTUtMDEtMjdUMDc6MDQ6NTQuNzUzWiIsInVwZGF0ZWRfYXQiOiIyMDE4LTA4LTI0VDExOjM0OjI3LjY5NloiLCJuYW1lIjoiRGFuIEFsbGVuIiwiY29tcGFueSI6Ik9wZW5EZXZpc2UgSW5jLiIsImJsb2ciOiJodHRwOi8vbW9qYXZlbGludXguY29tIiwibG9jYXRpb24iOiJMb25lIFRyZWUsIENPIiwiaGlkZGVuIjpmYWxzZSwibGFzdF9zeW5jZWRfYXQiOiIyMDE4LTA4LTI0VDExOjMzOjQ3LjY1OVoiLCJlbWFpbCI6bnVsbCwiYmlvIjoiT3BlbiBTb3VyY2UgRGV2ZWxvcGVyLCBAYXNjaWlkb2N0b3IgUHJvamVjdCBMZWFkLCBAYW50b3JhIFByb2plY3QgQ28tTGVhZCwgSlZNIFBvbHlnbG90IENoYW1waW9uLCBDb21tdW5pdHkgQ2F0YWx5c3QsIEF1dGhvciIsImZvbGxvd2VycyI6bnVsbCwiZm9sbG93aW5nIjpudWxsLCJ1dWlkIjoiNzkzNTEiLCJob3N0X3R5cGUiOiJHaXRIdWIifSx7ImdpdGh1Yl9pZCI6IjMzNzcwIiwibG9naW4iOiJtYXJjYW5kcmUiLCJ1c2VyX3R5cGUiOiJVc2VyIiwiY3JlYXRlZF9hdCI6IjIwMTUtMDEtMjdUMDc6MDY6MDguNjkzWiIsInVwZGF0ZWRfYXQiOiIyMDE3LTA4LTI3VDIyOjA2OjMzLjkxMVoiLCJuYW1lIjoiTWFyYy1BbmRyw6kgTGFmb3J0dW5lIiwiY29tcGFueSI6IkZyZWVsYW5jZSIsImJsb2ciOiJibG9nLm1hcmMtYW5kcmUuY2EiLCJsb2NhdGlvbiI6Ik1vbnRyZWFsLCBDYW5hZGEiLCJoaWRkZW4iOmZhbHNlLCJsYXN0X3N5bmNlZF9hdCI6IjIwMTYtMTItMTlUMTQ6MDI6MzYuMjQ0WiIsImVtYWlsIjoiZ2l0aHViX3JvY2tzQG1hcmMtYW5kcmUuY2EiLCJiaW8iOm51bGwsImZvbGxvd2VycyI6MTcyLCJmb2xsb3dpbmciOjEwLCJ1dWlkIjoiMzM3NzAiLCJob3N0X3R5cGUiOiJHaXRIdWIifSx7ImdpdGh1Yl9pZCI6IjM5NTkiLCJsb2dpbiI6Im1ya24iLCJ1c2VyX3R5cGUiOiJVc2VyIiwiY3JlYXRlZF9hdCI6IjIwMTUtMDEtMjhUMTA6MzA6MjYuNDY2WiIsInVwZGF0ZWRfYXQiOiIyMDE3LTA3LTI3VDAxOjMyOjI3LjQyNFoiLCJuYW1lIjoiS2VudGEgTXVyYXRhIiwiY29tcGFueSI6IkBzcGVlZSAiLCJibG9nIjoiaHR0cDovL2QuaGF0ZW5hLm5lLmpwL21ya24iLCJsb2NhdGlvbiI6IlRva3lvLCBKYXBhbiIsImhpZGRlbiI6ZmFsc2UsImxhc3Rfc3luY2VkX2F0IjoiMjAxNi0xMi0yMFQyMzowNDowMC44MTFaIiwiZW1haWwiOm51bGwsImJpbyI6IkEgQ1J1YnkgY29tbWl0dGVyLiIsImZvbGxvd2VycyI6Mjg0LCJmb2xsb3dpbmciOjE2NiwidXVpZCI6IjM5NTkiLCJob3N0X3R5cGUiOiJHaXRIdWIifSx7ImdpdGh1Yl9pZCI6Ijg5NDU2MSIsImxvZ2luIjoiTWF4TGFwIiwidXNlcl90eXBlIjoiVXNlciIsImNyZWF0ZWRfYXQiOiIyMDE1LTAyLTE2VDEyOjI1OjIxLjY1MVoiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wNy0yOFQyMjoyMjowNS4yNTVaIiwibmFtZSI6Ik1heGltZSBMYXBvaW50ZSIsImNvbXBhbnkiOm51bGwsImJsb2ciOiIiLCJsb2NhdGlvbiI6bnVsbCwiaGlkZGVuIjpmYWxzZSwibGFzdF9zeW5jZWRfYXQiOiIyMDE3LTAxLTIxVDE0OjAzOjQ3LjEwOVoiLCJlbWFpbCI6bnVsbCwiYmlvIjpudWxsLCJmb2xsb3dlcnMiOjAsImZvbGxvd2luZyI6MCwidXVpZCI6Ijg5NDU2MSIsImhvc3RfdHlwZSI6IkdpdEh1YiJ9LHsiZ2l0aHViX2lkIjoiMjE1NTciLCJsb2dpbiI6Im1hbWUiLCJ1c2VyX3R5cGUiOiJVc2VyIiwiY3JlYXRlZF9hdCI6IjIwMTUtMDItMTdUMDU6NDk6NDMuMTMwWiIsInVwZGF0ZWRfYXQiOiIyMDE3LTEwLTE0VDE5OjMyOjA3LjI3OFoiLCJuYW1lIjoiWXVzdWtlIEVuZG9oIiwiY29tcGFueSI6IkBjb29rcGFkICIsImJsb2ciOiJodHRwOi8vZC5oYXRlbmEubmUuanAva3UtbWEtbWUvIiwibG9jYXRpb24iOiJKYXBhbiIsImhpZGRlbiI6ZmFsc2UsImxhc3Rfc3luY2VkX2F0IjoiMjAxNy0wMi0yMlQxMzoxNTozNC4yNTNaIiwiZW1haWwiOiJtYW1lQHJ1YnktbGFuZy5vcmciLCJiaW8iOiJXb3JsZCBOby4xIElPQ0NDIHBsYXllci4gIGh0dHA6Ly9pb2NjYy5vcmcvd2lubmVycy5odG1sI1l1c3VrZV9FbmRvaCIsImZvbGxvd2VycyI6bnVsbCwiZm9sbG93aW5nIjpudWxsLCJ1dWlkIjoiMjE1NTciLCJob3N0X3R5cGUiOiJHaXRIdWIifSx7ImdpdGh1Yl9pZCI6IjIwMTAwMTMiLCJsb2dpbiI6InFuZXQtaGVyd2luIiwidXNlcl90eXBlIjoiVXNlciIsImNyZWF0ZWRfYXQiOiIyMDE1LTAyLTI3VDAzOjU0OjQyLjA4MloiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wMS0yNVQwMzowMjoyNy42MjRaIiwibmFtZSI6IkhlcndpbiIsImNvbXBhbnkiOiJAUXVhcmFudGFpbmVuZXQiLCJibG9nIjoiaHR0cDovL3d3dy5xdWFyYW50YWluZW5ldC5ubCIsImxvY2F0aW9uIjoiRW5zY2hlZGUsIFRoZSBOZXRoZXJsYW5kcyIsImhpZGRlbiI6ZmFsc2UsImxhc3Rfc3luY2VkX2F0IjoiMjAxNy0wMS0yNVQwMzowMjoyNy4wMzBaIiwiZW1haWwiOiJoZXJ3aW5AcXVhcmFudGFpbmVuZXQubmwiLCJiaW8iOiJUaGlzIGFjY291bnQgaGFzIGJlZW4gYWJhbmRvbmVkLCBwbGVhc2UgcmVmZXIgdG8gQGhlcndpbncgaW5zdGVhZC4iLCJmb2xsb3dlcnMiOjAsImZvbGxvd2luZyI6MCwidXVpZCI6IjIwMTAwMTMiLCJob3N0X3R5cGUiOiJHaXRIdWIifSx7ImdpdGh1Yl9pZCI6IjExNTI0NzU3IiwibG9naW4iOiJoa2RuZXQiLCJ1c2VyX3R5cGUiOiJVc2VyIiwiY3JlYXRlZF9hdCI6IjIwMTUtMTEtMDVUMDc6Mjg6NDYuNzkwWiIsInVwZGF0ZWRfYXQiOiIyMDE4LTAxLTI5VDEzOjE1OjI0Ljg0MFoiLCJuYW1lIjoiaGtkbmV0IiwiY29tcGFueSI6bnVsbCwiYmxvZyI6IiIsImxvY2F0aW9uIjoiSmFwYW4iLCJoaWRkZW4iOmZhbHNlLCJsYXN0X3N5bmNlZF9hdCI6IjIwMTYtMDQtMTNUMjE6MzU6NDguODE4WiIsImVtYWlsIjpudWxsLCJiaW8iOm51bGwsImZvbGxvd2VycyI6bnVsbCwiZm9sbG93aW5nIjpudWxsLCJ1dWlkIjoiMTE1MjQ3NTciLCJob3N0X3R5cGUiOiJHaXRIdWIifV0=
+    http_version: 
+  recorded_at: Fri, 14 Sep 2018 23:02:06 GMT
+recorded_with: VCR 3.0.3

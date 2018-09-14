@@ -41,6 +41,7 @@ GEM
       crack
       faraday
       faraday_middleware
+    vcr (3.0.3)
 
 PLATFORMS
   ruby
@@ -51,6 +52,7 @@ DEPENDENCIES
   rake (~> 10.0)
   rspec (~> 3.0)
   rspec-its
+  vcr (~> 3.0)
 
 BUNDLED WITH
    1.16.2

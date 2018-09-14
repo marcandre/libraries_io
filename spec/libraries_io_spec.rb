@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 
-RSpec.describe LibrariesIO do
+RSpec.describe LibrariesIO, vcr: {record: :new_episodes} do
   let(:api) { LibrariesIO.new }
 
   subject { api }
