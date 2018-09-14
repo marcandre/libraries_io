@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/marcandre/libraries_io.svg?branch=master)](https://travis-ci.org/marcandre/libraries_io) [![Gem Version](https://badge.fury.io/rb/libraries_io.png)](https://rubygems.org/gems/libraries_io)
+
+
 # LibrariesIO
 
 This is a wrapper for [Libraries.io](https://libraries.io/api#project-dependencies)'s API.
