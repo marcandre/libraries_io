@@ -9,3 +9,4 @@
 
 # rspec failure tracking
 .rspec_status
+.libraries_io_api_key

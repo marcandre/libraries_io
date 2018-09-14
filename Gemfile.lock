@@ -28,6 +28,9 @@ GEM
     rspec-expectations (3.8.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
+    rspec-its (1.2.0)
+      rspec-core (>= 3.0.0)
+      rspec-expectations (>= 3.0.0)
     rspec-mocks (3.8.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
@@ -47,6 +50,7 @@ DEPENDENCIES
   libraries_io!
   rake (~> 10.0)
   rspec (~> 3.0)
+  rspec-its
 
 BUNDLED WITH
    1.16.2
