@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://libraries.io/api/rubygems/deep-cover/sourcerank
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 22 Sep 2018 23:25:26 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=d0442eaee97b4882f478f97326a9395ad1537658726; expires=Sun, 22-Sep-19
+        23:25:26 GMT; path=/; domain=.libraries.io; HttpOnly
+      vary:
+      - Accept-Encoding, Origin
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      x-ratelimit-limit:
+      - '30'
+      x-ratelimit-remaining:
+      - '29'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 07500c34-7d70-43f7-a79b-fa11f2d6ec2d
+      x-runtime:
+      - '0.364905'
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 45e887df1c973f77-YUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"basic_info_present":1,"repository_present":1,"readme_present":1,"license_present":1,"versions_present":1,"follows_semver":0,"recent_release":1,"not_brand_new":1,"one_point_oh":0,"dependent_projects":2,"dependent_repositories":0,"stars":2,"contributors":1,"subscribers":0,"all_prereleases":0,"any_outdated_dependencies":0,"is_deprecated":0,"is_unmaintained":0,"is_removed":0}'
+    http_version: 
+  recorded_at: Sat, 22 Sep 2018 23:25:27 GMT
+recorded_with: VCR 3.0.3

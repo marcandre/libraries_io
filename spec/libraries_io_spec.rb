@@ -52,12 +52,21 @@ RSpec.describe LibrariesIO, vcr: {record: :new_episodes} do
 
     its(:contributors) {
       should include(hash_including(
-        'login' => 'marcandre',
-        'name' => 'Marc-André Lafortune',
-        'location' => 'Montreal, Canada',
-        'github_id' => '33770',
+        'location', 'github_id',
+        'login' => 'MaxLap',
+        'name' => 'Maxime Lapointe',
       ))
     }
+
+    describe 'when restricted to a specify number' do
+      subject { project.contributors(per_page: 1) }
+
+      its(:size) { should == 1 }
+      it { should include hash_including(
+        'location', 'github_id', 'login', 'name'
+      )}
+    end
+
 
     its(:sourcerank) {
       should match(hash_including(

@@ -1,4 +1,5 @@
 require 'tlaw'
+require_relative 'libraries_io/ext/tlaw'
 
 require_relative 'libraries_io/version'
 require_relative 'libraries_io/api'
