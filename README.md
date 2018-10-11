@@ -19,7 +19,7 @@ And then execute:
 
     $ bundle
 
-2) Get an API key [from Libraries.io](https://libraries.io/account) and specify it either:
+2) Get an API key [from Libraries.io](https://libraries.io/account). [A section below](#api-key) lists the different way to specify it.
 
 ## Usage
 
@@ -97,6 +97,8 @@ All documented calls are implemented (except "subscriptions"):
 * [api.user(name, host: "github").projects](https://libraries.io/api#user-projects)
 * [api.user(name, host: "github").repository_contributions](https://libraries.io/api#user-repository-contributions)
 * [api.user(name, host: "github").dependencies(platform: nil)](https://libraries.io/api#user-dependencies)
+
+*Note*: All API endpoints accept parameters `page` and `per_page`.
 
 ### API Key
 
