@@ -18,7 +18,11 @@ class LibrariesIO::API < TLAW::API
     end
 
     namespace :platform, '/{platform_id}' do
+      param :platform_id, default: 'rubygems'
+
       namespace :project, '/{id}' do
+        param :id, required: true
+
         endpoint :info, '' do
           desc "Get information about a package and it's versions"
         end
