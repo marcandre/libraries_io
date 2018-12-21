@@ -5,7 +5,7 @@ class << LibrariesIO::API
     else
       [namespace, name.to_s.gsub('_', '-')].compact.join('-')
     end
-    [LibrariesIO::API.docs_link, id].join('#')
+    [docs_link, id].join('#')
   end
 
   def setup_all_doc(prefix = nil, base = self)
