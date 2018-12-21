@@ -1,25 +1,30 @@
 module TLAW
-  class << DSL::BaseBuilder
-    def globals
-      @@globals ||= []
+  class DSL::BaseBuilder
+    def symbol
+      params[:symbol]
+    end unless method_defined? :symbol
+
+    def self.after_each_blocks
+      @@after_each_blocks ||= []
     end
   end
 
   class DSL::NamespaceBuilder
-    def global(name, type = nil, **opts)
-      self.class.globals << [name, type, opts]
+    def after_each(what = :all, &block)
+      raise NotImplemented unless what == :endpoint
+      self.class.after_each_blocks << block
     end
 
-    module GlobalAwareEndpoint
+    module AfterEachAwareEndpoint
       def endpoint(*args, &block)
         super(*args) do
           instance_eval(&block)
-          self.class.globals.each do |name, type, opts|
-            param(name, type, **opts)
+          self.class.after_each_blocks.each do |block|
+            instance_eval(&block)
           end
         end
       end
     end
-    prepend GlobalAwareEndpoint
+    prepend AfterEachAwareEndpoint
   end
 end

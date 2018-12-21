@@ -9,8 +9,13 @@ class LibrariesIO::API < TLAW::API
     param :api_key,
           default: -> { LibrariesIO.api_key },
           desc: 'get your api key from your account page: https://libraries.io/account'
-    global :page, desc: 'page (default 1)'
-    global :per_page, desc: 'results per page (default is `30`, max is `100`)'
+
+    after_each(:endpoint) do
+      if symbol != :info
+        param :page, desc: 'page (default 1)'
+        param :per_page, desc: 'results per page (default is `30`, max is `100`)'
+      end
+    end
 
     endpoint :platforms do
       desc "Get a list of supported package managers"
