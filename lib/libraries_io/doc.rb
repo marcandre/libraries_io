@@ -9,11 +9,8 @@ class << LibrariesIO::API
   end
 
   def setup_all_doc(prefix = nil, base = self)
-    base.endpoints.each do |endpoint|
-      endpoint.docs_link ||= endpoint_doc(prefix, endpoint.symbol)
-    end
-    base.namespaces.each do |namespace|
-      setup_all_doc(namespace.symbol, namespace)
+    traverse(:endpoints) do |endpoint|
+      endpoint.docs_link = endpoint_doc(endpoint.parent.symbol, endpoint.symbol)
     end
   end
 end
