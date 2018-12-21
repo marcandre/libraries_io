@@ -1,3 +1,4 @@
+require 'time'
 require 'tlaw'
 require_relative 'libraries_io/ext/tlaw'
 

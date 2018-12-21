@@ -1,11 +1,11 @@
 module TLAW
-  class << DSL::BaseWrapper
+  class << DSL::BaseBuilder
     def globals
       @@globals ||= []
     end
   end
 
-  class DSL::NamespaceWrapper
+  class DSL::NamespaceBuilder
     def global(name, type = nil, **opts)
       self.class.globals << [name, type, opts]
     end

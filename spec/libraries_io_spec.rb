@@ -81,8 +81,8 @@ RSpec.describe LibrariesIO, vcr: {record: :new_episodes} do
     }
 
     it('has a good docs link') {
-      project.endpoints[:info].docs_link.should == 'https://libraries.io/api#project'
-      project.endpoints[:dependents].docs_link.should == 'https://libraries.io/api#project-dependents'
+      project.endpoint(:info).docs_link.should == 'https://libraries.io/api#project'
+      project.endpoint(:dependents).docs_link.should == 'https://libraries.io/api#project-dependents'
       project.class.docs_link.should == nil
     }
   end

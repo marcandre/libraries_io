@@ -9,10 +9,10 @@ class << LibrariesIO::API
   end
 
   def setup_all_doc(prefix = nil, base = self)
-    base.endpoints.values.each do |endpoint|
+    base.endpoints.each do |endpoint|
       endpoint.docs_link ||= endpoint_doc(prefix, endpoint.symbol)
     end
-    base.namespaces.values.each do |namespace|
+    base.namespaces.each do |namespace|
       setup_all_doc(namespace.symbol, namespace)
     end
   end
