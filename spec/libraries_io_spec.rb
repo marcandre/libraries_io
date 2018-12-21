@@ -80,6 +80,11 @@ RSpec.describe LibrariesIO, vcr: {record: :new_episodes} do
       result['>= 0'].should > 0
     }
 
+    it('has a good docs link') {
+      project.endpoints[:info].docs_link.should == 'https://libraries.io/api#project'
+      project.endpoints[:dependents].docs_link.should == 'https://libraries.io/api#project-dependents'
+      project.class.docs_link.should == nil
+    }
   end
 
   it 'allows searching' do
